@@ -1,0 +1,137 @@
+h1 {
+  font-family: "Noto Sans", "Lucida Sans", Helvetica, Arial, sans-serif;
+  font-size: 26px;
+  opacity: 0.9;
+  color: azure;
+  background-color: rgb(3, 0, 0, 0.3);
+  text-align: left;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding: 2%;
+}
+
+myheading {
+  font-family: "Noto Sans", "Lucida Sans", Helvetica, Arial, sans-serif;
+  font-size: 26px;
+  opacity: 0.9;
+  color: azure;
+  background-color: rgb(3, 0, 0, 0.3);
+  text-align: center;
+  padding: 1%;
+}
+
+h2 {
+  font-family: "Noto Sans", "Lucida Sans", Helvetica, Arial, sans-serif;
+  font-size: 24px;
+  color: black;
+}
+
+h3 {
+  font-family: "Noto Sans", "Lucida Sans", Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  color: black;
+}
+
+h4 {
+  font-family: "Noto Sans", "Lucida Sans", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  color: black;
+}
+
+h5 {
+  font-family: "Noto Sans", "Lucida Sans", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  color: black;
+}
+
+h6 {
+  font-family: "Noto Sans", "Lucida Sans", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  color: black;
+}
+
+h8 {
+  display: block;
+  font-family: "Noto Sans", "Lucida Sans", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  color: black;
+  /* text-align: left; */
+}
+h7 {
+  display: block;
+  font-family: "Noto Sans", "Lucida Sans", Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  color: black;
+  text-align: center;
+}
+
+h9 {
+  display: block;
+  font-family: "Noto Sans", "Lucida Sans", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: black;
+  text-align: left;
+  margin-left: 5px;
+}
+h10 {
+  display: block;
+  font-family: "Noto Sans", "Lucida Sans", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  color: black;
+  text-align: center;
+  margin-left: 5px;
+}
+nav {
+  font-family: "Noto Sans", "Lucida Sans", Helvetica, Arial, sans-serif;
+  color: black;
+  /* text-align: left; */
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  margin: 0;
+}
+#main {
+  display: flex;
+  flex: 1;
+}
+#main > article {
+  flex: 1;
+}
+#main > nav,
+#main > aside {
+  flex: 0 0 20vw;
+  background: beige;
+}
+#main > nav {
+  order: -1;
+}
+header,
+footer {
+  background: yellowgreen;
+  height: 24vh;
+}
+header,
+footer,
+article,
+nav,
+aside {
+  padding: 1em;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 20px;
+  align-items: stretch;
+}
+.grid img {
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+  max-width: 100%;
+}
